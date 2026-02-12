@@ -5,8 +5,8 @@
 #
 # Exemplo mínimo para rodar:
 
-system.pxar:/
-home.pxar:/host/home
+home.pxar:/host/home/
+system.pxar:/host/
 
 # Exemplo de exclusão (substitua <USER> e <FOLDER_TO_EXCLUDE> pelo desejado):
 !/host/home/<USER>/FOLDER_TO_EXCLUDE
