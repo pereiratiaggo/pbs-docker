@@ -16,4 +16,4 @@ system.pxar:/host/
 !/host/run
 !/host/root/.cache
 !/host/home/*/.cache
-!/host/home/<USER>/FOLDER_TO_EXCLUDE
+#!/host/home/<USER>/FOLDER_TO_EXCLUDE
