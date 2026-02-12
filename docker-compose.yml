@@ -1,0 +1,28 @@
+services:
+  pbs-client:
+    image: proxmox/proxmox-backup-client:latest
+    container_name: pbs-client
+    restart: "no"
+
+
+    env_file:
+      - .env
+
+
+    volumes:
+    # Pastas locais para backup
+    - /:/host:ro
+
+
+    # Arquivo de configuração
+    - ./backup.conf:/config/backup.conf:ro
+
+
+    # Cache/keys
+    - ./data:/data
+    - ./entrypoint.sh:/entrypoint.sh:ro
+
+
+    entrypoint: ["/entrypoint.sh"]
+
+    command: []

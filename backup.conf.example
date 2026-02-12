@@ -1,0 +1,11 @@
+# Formato:
+# Linhas sem prefixo são includes: <arquivo.pxar>:<caminho_local>
+# Linhas que começam com '!' são exclusões (caminho absoluto)
+# Exemplo: inclui /host/home, mas exclui /host/home/tiago/ResilioSync
+
+home.pxar:/host/home
+etc.pxar:/host/etc
+docker.pxar:/host/var/lib/docker
+dados.pxar:/host/dados
+
+!/host/home/tiago/ResilioSync
